@@ -179,6 +179,9 @@ a{
     transition: 1s ease-in-out;
     transition-delay: 0.3s;
 }
+.account-text{
+    display: none;
+}
 .left-panel .image,
 .left-panel .content{
     transform: translateX(-220%);
@@ -211,4 +214,41 @@ a{
 }
 .container.sign-up-mode .right-panel{
     pointer-events: none;
+}
+/*----@MEDIA Phone----*/
+@media (max-width:769px){
+    .container{
+        width: 100vw;
+        height: 100vh;
+    }
+}
+@media (max-width:600px) {
+    .container::before{
+        display: none;
+    }
+    form.sign-up-form {
+        display: none;
+    }
+    .container.sign-up-mode2 form.sign-up-form{
+        display: flex;
+        opacity: 1;
+    }
+    .container.sign-up-mode2 form.sign-in-form{
+        display: none;
+    }
+    form {
+        width: 80%; 
+    }
+    .panels-container{
+        display: none;
+    }
+    .account-text{
+        display: initial;
+        margin-top: 40px;
+    }
+}
+@media (max-width:320px){
+    form{
+        width: 90%;
+    }
 }
