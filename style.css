@@ -148,6 +148,8 @@ a{
 }
 .content{
     color: #fff;
+    transition: 1.2s ease-in-out;
+    transition-delay: 0.3s;
 }
 .panel h3{
     font-size: 30px;
@@ -161,8 +163,32 @@ a{
 }
 .image{
     width: 100%;
+    transition: 1.2s ease-in-out;
+    transition-delay: 0.3s;
 }
 .container.sign_up_mode::before{
     transform: translateX(0);
 }
+.container.sign_up_mode .right-panel .image,
+.container.sign_up_mode .right-panel .content{
+    transform: translateX(200%);
+}
+.container.sign_up_mode .left-panel .image,
+.container.sign_up_mode .left-panel .content{
+    transform: translateX(0);
+}
 
+.left-panel .image,
+.left-panel .content{
+    transform: translateX(-150%);
+}
+.right-panel .image,
+.right-panel .content{
+    transform: translateX(0);
+}
+
+
+
+/*Animation*/
+
+/*Animation*/
