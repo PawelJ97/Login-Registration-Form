@@ -53,6 +53,16 @@ form{
     min-width: 240px;
     padding: 0 10px;
 }
+form.sign-in-form{
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+    transition-delay:1s;
+}
+form.sign-up-form{
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    transition-delay:1s;
+}
 .title{
     font-size: 38px;
     color:#cb052d;
@@ -93,7 +103,7 @@ form{
     background:#cb052d ;
     color:#fff;
     font-weight: 500;
-    transition:.7s ease-out;
+    transition:.3s ease-out;
     cursor: pointer;
 }
 .btn:hover{
@@ -142,13 +152,16 @@ a{
     justify-content: space-around;
     text-align: center;
     width: 35%;
-    min-width: 238px;
+    min-width: 240px;
     padding: 0 10px;
     z-index: 6;
 }
+.left-panel{
+    pointer-events: none;
+}
 .content{
     color: #fff;
-    transition: 1.2s ease-in-out;
+    transition: 1s ease-in-out;
     transition-delay: 0.3s;
 }
 .panel h3{
@@ -163,32 +176,39 @@ a{
 }
 .image{
     width: 100%;
-    transition: 1.2s ease-in-out;
+    transition: 1s ease-in-out;
     transition-delay: 0.3s;
 }
-.container.sign_up_mode::before{
-    transform: translateX(0);
-}
-.container.sign_up_mode .right-panel .image,
-.container.sign_up_mode .right-panel .content{
-    transform: translateX(200%);
-}
-.container.sign_up_mode .left-panel .image,
-.container.sign_up_mode .left-panel .content{
-    transform: translateX(0);
-}
-
 .left-panel .image,
 .left-panel .content{
-    transform: translateX(-150%);
+    transform: translateX(-220%);
 }
 .right-panel .image,
 .right-panel .content{
     transform: translateX(0);
 }
 
-
-
-/*Animation*/
-
-/*Animation*/
+/*----ANIMATION----*/
+.container.sign-up-mode::before{
+    transform: translateX(0);
+}
+.container.sign-up-mode .right-panel .image,
+.container.sign-up-mode .right-panel .content{
+    transform: translateX(220%);
+}
+.container.sign-up-mode .left-panel .image,
+.container.sign-up-mode .left-panel .content{
+    transform: translateX(0);
+}
+.container.sign-up-mode form.sign-in-form{
+    opacity: 0;
+}
+.container.sign-up-mode form.sign-up-form{
+    opacity: 1;
+}
+.container.sign-up-mode .left-panel{
+    pointer-events: all;
+}
+.container.sign-up-mode .right-panel{
+    pointer-events: none;
+}

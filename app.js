@@ -4,8 +4,8 @@ const container = document.querySelector(".container");
 
 //creating a form switch
 sign_up_btn.addEventListener("click", ()=> {
-    container.classList.add("sign_up_mode");
+    container.classList.add("sign-up-mode");
 });
 sign_in_btn.addEventListener("click", ()=> {
-    container.classList.remove("sign_up_mode");
+    container.classList.remove("sign-up-mode");
 });
