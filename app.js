@@ -21,6 +21,28 @@ const clearButton = document.querySelector("#sub-clear");
 const form = document.querySelector(".sign-up-form");
 
 //----Functions----
+
+//----Login message----
+function information(){
+    if(userNameA.value == "what1234" && password1A.value == "admin4321")
+    {
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Login successfule',
+            showConfirmButton: false,
+            timer: 1500
+          })
+        
+    } else 
+    {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+          });
+    }
+}
 function showErrorMessage(input, message) {
     const box = input.parentElement
     const errorMessage = box.querySelector(".error")
@@ -65,7 +87,6 @@ sendButton.addEventListener('click', e => {
     checkInputsLength(userNameB, 5)
     checkInputsLength(password1B, 8)
     checkEmail(email)
-
 })
 
 //----EVENT -CLEAR ALL- AFTER SUBMIT CLEAR---
@@ -84,6 +105,7 @@ loginButton.addEventListener('click', e => {
 
     checkInputsLength(userNameA, 5)
     checkInputsLength(password1A, 8)
+    information()
 })
 
 //creating a form switch
