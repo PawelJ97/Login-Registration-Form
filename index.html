@@ -15,25 +15,27 @@
 <!--SING-IN FORM-->
             <form action="" class="sign-in-form">
                 <h2 class="title">Sign in</h2>
-                <div class="input-field">
+                <div class="box">
                     <i class="fa fa-user" alt="f-user"></i>
-                    <input type="text" id="username" pleaceholder="Username">
+                    <input type="text" id="usernameA" pleaceholder="Username" required>
+                    <p class="error"></p>
                 </div>
-                <div class="input-field">
+                <div class="box">
                     <i class="fa fa-lock-alt" alt="f-lock"></i>
-                    <input type="password" id="password1" pleaceholder="Password">
+                    <input type="password" id="password1A" pleaceholder="Password" required>
+                    <p class="error"></p>
                 </div>
-                <input type="submit" value="Login" class="btn">
+                <input type="submit" value="Login" id="sub-login" class="btn">
                 <p class="social-text">Sign in using social media</p>
                 <div class="social-media">
-                    <a href="#" class="social-icon">
+                    <a href="https://www.facebook.com" class="social-icon">
                         <i class="fab fa-facebook"></i>
                         </a>
-                    <a href="#" class="social-icon">
+                    <a href="https://www.google.com" class="social-icon">
                         <i class="fab fa-google"></i></a>
-                    <a href="#" class="social-icon">
+                    <a href="https://pl.linkedin.com" class="social-icon">
                         <i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="social-icon">
+                    <a href="https://twitter.com" class="social-icon">
                         <i class="fab fa-twitter"></i></a>
                 </div>
                 <p class="account-text">Want to join us? <a href="#" id="sign-up-btn2">Sign up</a></p>
@@ -43,37 +45,38 @@
 <!--SING-UP FORM-->
             <form action="" class="sign-up-form">
                 <h2 class="title">Sign up</h2>
-                <div class="input-field">
+                <div class="box">
                     <i class="fa fa-user" alt="f-user"></i>
-                    <input type="text" id="username" pleaceholder="Username" reqiured>
+                    <input type="text" id="usernameB" pleaceholder="Username" reqiured>
                     <p class="error"></p>
                 </div>
-                <div class="input-field">
+                <div class="box">
                     <i class="fa fa-envelope" alt="f-envelope"></i>
                     <input type="text" id="e-mail" pleaceholder="E-mail" reqiured>
                     <p class="error"></p>
                 </div>
-                <div class="input-field">
+                <div class="box">
                     <i class="fa fa-lock-alt" alt="f-lock"></i>
-                    <input type="password" id="password1" pleaceholder="Password" reqiured>
+                    <input type="password" id="password1B" pleaceholder="Password" reqiured>
                     <p class="error"></p>
                 </div>
-                <div class="input-field">
+                <div class="box">
                     <i class="fa fa-lock-alt" alt="f-lockc"></i>
-                    <input type="password" id="password2" pleaceholder="check password" reqiured>
+                    <input type="password" id="password2B" pleaceholder="check password" reqiured>
                     <p class="error"></p>
                 </div>
-                <input type="submit" value="Sign up" class="btn">
+                <input type="submit" value="Sign up" id="sub-sign-up" class="btn">
+                <input type="submit" value="Clear" id="sub-clear" class="btn">
                 <p class="social-text">Sign in using social media</p>
                 <div class="social-media">
-                    <a href="#" class="social-icon">
+                    <a href="https://www.facebook.com" class="social-icon">
                         <i class="fab fa-facebook"></i>
                         </a>
-                    <a href="#" class="social-icon">
+                    <a href="https://www.google.com" class="social-icon">
                         <i class="fab fa-google"></i></a>
-                    <a href="#" class="social-icon">
+                    <a href="https://pl.linkedin.com" class="social-icon">
                         <i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="social-icon">
+                    <a href="https://twitter.com" class="social-icon">
                         <i class="fab fa-twitter"></i></a>
                 </div>
                 <p class="account-text">Alredy a member?<a href="#" id="sign-in-btn2">Sign in</a></p>
